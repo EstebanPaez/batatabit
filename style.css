@@ -78,6 +78,7 @@ header {
   justify-content: center;
   background-color: var(--off-white);
   width: 80%;
+  max-width: 500px;
   height: 48px;
   position: absolute;
   bottom: -24px;
@@ -93,10 +94,13 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  min-width: 320px;
+  padding: 15px;
 }
 
 .main img {
   width: 60%;
+  max-width: 300px;
   min-width: 195px;
   align-self: center;
   margin-top: 64px;
@@ -113,5 +117,159 @@ header {
   margin-top: 24px;
   font-weight: 500;
   font-size: 1.4rem;
+  line-height: 1.8rem;
   color: #757575;
+}
+
+.tables__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.table__container {
+  margin-top: 40px;
+  max-width: 450px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+td {
+  height: 40px;
+  text-align: start;
+}
+
+.table__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+  color: #757575;
+}
+
+.table__icon--down,
+.table__icon--up {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  background-image: url(./assets/icons/trending-down1.svg);
+}
+.table__icon--up {
+  background-image: url(./assets/icons/trending-up1.svg);
+}
+
+table {
+  font-size: 1.6rem;
+  color: var(--grey);
+  width: 60%;
+  max-width: 450px;
+}
+
+.table__row {
+  height: 40px;
+}
+
+.table__title {
+  color: var(--bitcoin-orange);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.table__title.commissions {
+  color: #1a9af7;
+}
+
+p.table__update {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #ffe9d4;
+  color: #201e1c;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+}
+
+p.table__update b {
+  font-weight: 700;
+}
+
+.advantages {
+  background-color: var(--warn-black);
+  color: var(--just-white);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.advantages > img {
+  position: relative;
+  top: -12.5px;
+}
+
+.advantages h2 {
+  font-size: 2.4rem;
+  margin-top: calc(64px - 12.5px);
+  margin-bottom: 24px;
+}
+
+.advantages > p {
+  color: #808080;
+  font-size: 1.4rem;
+  margin-bottom: 32px;
+}
+
+.cards__container {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.advantages__card {
+  height: 160px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: start;
+  background-color: #282623;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  max-width: 450px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.advantages__card img {
+  margin-bottom: 10px;
+}
+
+.advantages__card h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.advantages__card p {
+  font-size: 1.4rem;
+  color: #808080;
+}
+
+.bitcoin__girl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-image: url(./assets/images/bitcoinbaby1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bitcoin__girl h2 {
+  color: var(--just-white);
+  font-size: 3rem;
 }
